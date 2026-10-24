@@ -1,0 +1,28 @@
+{
+  "name": "facturacion",
+  "version": "1.0.0",
+  "description": "Sistema de facturación",
+  "main": "electron.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^24.8.8",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.facturacion.solo.punto",
+    "productName": "Facturacion",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  }
+}

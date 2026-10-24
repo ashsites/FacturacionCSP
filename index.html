@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Solo Punto · Apartados y encargos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="marca">
+            <h1>Creaciones Solo Punto</h1>
+            <small>Apartados y encargos</small>
+        </div>
+
+        <button onclick="nuevo()">+ Nuevo pedido</button>
+    </header>
+
+    <main>
+        <div class="bar">
+            <button class="tab s on" data-t="">Todos</button>
+
+            <button class="tab s" data-t="Encargo">
+                Encargos
+            </button>
+
+            <button class="tab s" data-t="Apartado">
+                Apartados
+            </button>
+
+            <button class="tab s" data-t="vencidos">
+                Vencidos
+            </button>
+
+            <input id="q" placeholder="Buscar cliente, teléfono o folio...">
+        </div>
+
+        <div id="lista"></div>
+    </main>
+
+    <dialog id="dlg"></dialog>
+
+    <div id="rec"></div>
+
+    <script src="./app.js"></script>
+    <script src="./factura.js"></script>
+    <script src="./parche.js"></script>
+</body>
+
+</html>
